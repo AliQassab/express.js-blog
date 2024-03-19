@@ -1,4 +1,4 @@
-# Ali & Nas Blog App
+# Blog App 
 
 This is a simple blog application built using Node.js and Express. It allows users to sign up, sign in, and view blog posts. Additionally, it features a dashboard for admins to manage posts including adding, deleting, and updating them. Whenever a new post is added by the admin, an email notification is sent to all subscribers.
 
