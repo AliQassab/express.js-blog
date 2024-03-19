@@ -21,7 +21,7 @@ This is a simple blog application built using Node.js and Express. It allows use
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/blog-app.git
+    git clone https://github.com/AliQassab/express.js-blog.git
     ```
 
 2. Navigate to the project directory:
