@@ -1,0 +1,45 @@
+<section>
+  <div class="px-4 pt-5 my-5 text-center">
+    <h1 class="display-4 fw-bold text-body-emphasis">Centered screenshot</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">
+        Quickly design and customize responsive mobile-first sites with
+        Bootstrap, the world’s most popular front-end open source toolkit,
+        featuring Sass variables and mixins, responsive grid system, extensive
+        prebuilt components, and powerful JavaScript plugins.
+      </p>
+    </div>
+    <img
+      src="/img/blog.webp"
+      alt="laptop"
+      class="rounded img-fluid"
+      width="981"
+      height="528"
+    />
+  </div>
+
+  <ul class="list-group">
+    <% data.forEach(post => { %>
+    <li class="list-group-item">
+      <div class="d-flex justify-content-between">
+        <a
+          href="/post/<%= post._id %>"
+          class="list-group-item list-group-item-action align-items-center d-flex justify-content-between"
+        >
+          <div>
+            <img
+              src="/<%= post.image %>"
+              alt="<%= post.image.name %>"
+              class="image-list"
+            />
+            <span class="h3 mx-5"><%= post.title %></span>
+          </div>
+          <span class="badge text-bg-primary rounded-pill"
+            ><%= post.createdAt.toDateString() %></span
+          >
+        </a>
+      </div>
+    </li>
+    <% }) %>
+  </ul>
+</section>
